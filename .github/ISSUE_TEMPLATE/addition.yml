@@ -1,0 +1,105 @@
+name: Addition
+description: Suggest a project to be added to the list
+title: '[ADDITION] <title>'
+labels: ['Addition', 'Awaiting Review']
+assignees:
+  - AdamXweb
+body:
+- type: markdown
+    attributes:
+      value: |-
+        ## If possible, please make a subission via Airtable
+        The easiest way to get an addition is to submit the new entity directly into [Airtable via our form.](https://airtable.com/shrNN6YAp7zPwsNom)<br>
+        This saves some doubling up, however we are keeping issues open to cater for the broader community if they don't agree to Airtable's TOS or Privacy poliucy.
+    validations:
+      required: false
+
+  # Software Category
+  - type: input
+    id: category
+    attributes:
+      label: Category
+      description: >-
+        Specify a category from [this list](https://github.com/AdamXweb/awesome-aussie#categories),
+        or suggest a new one
+      placeholder: e.g. Design Tools
+    validations:
+      required: true
+
+  # Software name + description
+  - type: textarea
+    id: intro
+    attributes:
+      label: Software to be added
+      description: >-
+        Please specify the software / service you would like adding,
+        and briefly describe what it is, and why it should be included in the list
+      placeholder: 
+    validations:
+      required: true
+
+  # Software supporting material
+  - type: textarea
+    id: supporting-material
+    attributes:
+      label: Supporting Material
+      description: >-
+        Please include links to any relevant supporting material, like the projects GitHub repo,
+        website / docs, any linkedin or crunchbase pages supporting that they are an aussie service
+      placeholder: 
+    validations:
+      required: true
+
+  # Association disclosure
+  - type: input
+    id: association
+    attributes:
+      label: Association Disclosure
+      description: >-
+        For transparency, please state weather you currently/ previously have had any association with
+        this project in any form. \nIf you have, then please also specify the context of your involvement
+      placeholder:
+    validations:
+      required: false
+
+  # Can user submit PR
+  - type: dropdown
+    id: canImplement
+    attributes:
+      label: Would you like to submit a PR?
+      description: Is this addition something that you are willing to submit a pull request for?
+      options:
+        - 'No.'
+        - 'Maybe?'
+        - 'Yes!'
+    validations:
+      required: false
+
+  # Confirmation checkboxes
+  - type: checkboxes
+    id: idiot-check
+    attributes:
+      label: Please tick the boxes
+      description: Before submitting, please ensure that
+      options:
+        - label: You have filled out this form accurately, and to the best of your knowledge
+          required: true
+        - label: You have indicated if you are associated with this project or a competitor
+          required: true
+        - label: A similar submission has not already [been opened](https://github.com/AdamXweb/awesome-aussie/issues?q=is%3Aissue) for this software/ service
+          required: true
+        - label: The item is not on the [Airtable master list](https://airtable.com/shruokTjBBXkElK4n)
+          required: true
+        - label: You agree to the [code of conduct](https://github.com/AdamXweb/awesome-aussie/blob/master/.github/CODE_OF_CONDUCT.md)
+          required: true
+  
+  # Final message
+  - type: markdown
+    attributes:
+      value: |-
+        ## Thanks 🙏
+        <img align="left" width="160" src="https://media.giphy.com/media/3oEdva9BUHPIs2SkGk/giphy.gif" alt="👾" />
+        Thank you for your suggested removal! You should expect a reply within 48 hours.<br>
+        ⭐️ Consider dropping the repo a star if you're enjoying Awesome Aussie.<br>
+    validations:
+      required: false

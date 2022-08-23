@@ -1,0 +1,26 @@
+name: Feedback
+description: Leave feedback, related to this list or it's content
+title: '[FEEDBACK] <title>'
+labels: ['Feedback']
+assignees:
+  - AdamXweb
+body:
+
+  # Feedback Input
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Feedback
+    validations:
+      required: true
+  
+  # Final message
+  - type: markdown
+    attributes:
+      value: |-
+        ## Thanks 🙏
+        <img align="left" width="160" src="https://media.giphy.com/media/3oEdva9BUHPIs2SkGk/giphy.gif" alt="👾" />
+        Thank you for your suggested removal! You should expect a reply within 48 hours.<br>
+        ⭐️ Consider dropping the repo a star if you're enjoying Awesome Aussie.<br>
+    validations:
+      required: false
