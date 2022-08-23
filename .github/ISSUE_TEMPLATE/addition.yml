@@ -10,7 +10,7 @@ body:
       value: |-
         ## If possible, please make a subission via Airtable
         The easiest way to get an addition is to submit the new entity directly into [Airtable via our form.](https://airtable.com/shrNN6YAp7zPwsNom)<br>
-        This saves some doubling up, however we are keeping issues open to cater for the broader community if they don't agree to Airtable's TOS or Privacy poliucy.
+        This saves some doubling up, however we are keeping issues open to cater for the broader community if they don't agree to Airtable's TOS or Privacy policy.
     validations:
       required: false
 
