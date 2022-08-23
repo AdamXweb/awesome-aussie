@@ -5,7 +5,7 @@ labels: ['Addition', 'Awaiting Review']
 assignees:
   - AdamXweb
 body:
-- type: markdown
+  - type: markdown
     attributes:
       value: |-
         ## If possible, please make a subission via Airtable
