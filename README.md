@@ -20,10 +20,7 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 
 
 
-### Categories
-
-
-
-| Provider | Description | Size | HQ | Alternative to |
-| --- | --- | --- | --- | --- |
-
+### Airtable Integration Workflow
+This branch stores the workflows to connect Github and Airtable. It provides the following functions:
+- Syncing Github issues to Airtable. -> This allows the Airtable automations to quickly see if a new submission is a duplicate.
+- Building the Readme from updated Airtable data and creating a pull request to update the main repository. -> Gathers the updates from Airtable and creates a pull request to update the README.
