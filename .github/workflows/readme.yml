@@ -10,6 +10,7 @@ on:
       - airtable
   pull_request:
   schedule:
+    # Daily at midnight utc
     - cron: "0 0 * * *"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -26,13 +27,15 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: "12.x"
+          node-version: "14.x"
       - name: Install Dependencies
         run: npm install
       - name: Build README from Airtable
         run: npm run readme
         env:
           AIRTABLE_API_KEY: ${{secrets.AIRTABLE_API_KEY}}
+          AIRTABLE_BASE_ID: ${{ secrets.AIRTABLE_BASE_ID }}
+
       # Remove unwanted items
       - name: Removing workflows and other items
         run: |
