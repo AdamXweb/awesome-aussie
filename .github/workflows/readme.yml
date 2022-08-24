@@ -39,14 +39,25 @@ jobs:
       # Remove unwanted items
       - name: Removing workflows and other items
         run: |
+          rm -rf .github/workflows
+          rm -rf issues
+          rm -rf readme
+          rm package.json
+          rm package-lock.json
+          rm .gitignore
           git config user.name "AdamXbot"
           git config user.email 'adamxbot@users.noreply.github.com'
-          git add README.md
+          git add .
           msg="rebuilding readme from airtable for $(date)"
           git commit -m "$msg"
       # Create pull request of changes to main branch
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
         with:
+          branch: airtable-updates/patch
           delete-branch: true
           title: '[BUILD] Daily update readme from Airtable workflow'
+          base: main
+          author: AdamXbot <adamxbot@users.noreply.github.com>
+          branch: main
+          reviewers: AdamXweb
