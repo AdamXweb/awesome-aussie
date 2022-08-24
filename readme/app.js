@@ -45,13 +45,14 @@ base('README').select({
             if(await check(category))
             {console.log("Skipping ", category)}
             else{
-            readmecontent += `### ${category}\n`
-            readmecontent += `| Provider | Description | Size | HQ | Alternative to |\n`
-            readmecontent += `| --- | --- | --- | --- | --- |\n`
+            readmecontent += `## ${category}\n`
+            readmecontent += `| Provider | Description | HQ | Alternative to |\n`
+            readmecontent += `| --- | --- | --- | --- |\n`
             
             await awesome(category);
             }
         };
+            await extras();
             fs.writeFileSync(filename, readmecontent);
             console.log("wrote to", filename)
     });
@@ -67,7 +68,7 @@ async function awesome(category){
         records.forEach(function(record) {
             console.log(category)
             console.log('Adding ', record.get('Provider'));
-            readmecontent += `| [${record.get('Provider')}](${record.get('URL')}) | ${record.get('Description')} | ${record.get('Size')} | ${record.get('HQ')} | ${record.get('Alternative to')} |\n`;
+            readmecontent += `| [${record.get('Provider')}](${record.get('URL')}) | ${record.get('Description')} | ${record.get('HQ')} | ${record.get('Alternative to')} |\n`;
         });
         fetchNextPage();
 
@@ -95,6 +96,28 @@ async function check(category){
         else{
             resolve(0);
         }
+    }, function done(err) {
+        if (err) {
+             console.error(err);
+        }
+        resolve()
+        return true;
+    });
+})
+}
+async function extras(){
+    return new Promise(function(resolve, reject) {
+    base('README').select({
+        view: "Grid view",
+        filterByFormula: "OR(Name='LICENSE',Name='Contributing',Name='Thank You')"
+    }).eachPage(function page(records, fetchNextPage) {
+        // This function (`page`) will get called for each page of records.
+        records.forEach(function(record) {
+            readmecontent += `### ${record.get('Name')}\n`
+            readmecontent += `${record.get('Notes')}\n`
+        });
+        fetchNextPage();
+
     }, function done(err) {
         if (err) {
              console.error(err);
