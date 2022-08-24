@@ -18,12 +18,16 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 
 
 
-
-
-### Categories
-
-
-
+### Payments
 | Provider | Description | Size | HQ | Alternative to |
 | --- | --- | --- | --- | --- |
-
+| [Cake](https://cakeequity.com/au/) | At Cake Equity we make equity easier to use. Grow your company, reward your team, eliminate the hassle. Sign up for FREE today! | Startup | Brisbane | undefined |
+| [Zai](https://www.hellozai.com) | Formerly AssemblyPayments, now merged with Currencyfair | Scaleup | Melbourne | Stripe, Paypal |
+### Product Management
+| Provider | Description | Size | HQ | Alternative to |
+| --- | --- | --- | --- | --- |
+| [Sauce](https://sauce.app/) | Build your source of truth for product knowledge. They help high-performing product managers to manage features, monitor metrics and align stakeholders with less effort, directly in Slack. | Startup | Sydney | zeda.io |
+### Research tools
+| Provider | Description | Size | HQ | Alternative to |
+| --- | --- | --- | --- | --- |
+| [Dovetail](https://dovetailapp.com/) | Dovetail is cloud-based user research and customer feedback software for the analysis, organization, collaboration and storage of data. | Startup | Sydney | Productboard |
