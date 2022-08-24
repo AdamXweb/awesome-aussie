@@ -2,7 +2,7 @@
 
 *<p align="center">A curated list of Australian based apps, software, and providers 🦘🇦🇺</p>*
 
-[⏬ Skip to Content ⏬](#)
+[⏬ Skip to Content ⏬](#Payments)
 
 ## Intro [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 Software, tools or popular services with a HQ down under.
@@ -17,6 +17,12 @@ See aussie alternatives to the big global giants.
 The data is available here on Github, but is also mirrored to [Codeberg](https://codeberg.org/adamxweb/awesome-aussie)., and is syncable / downloadable as a CSV from [Airtable ](https://airtable.com/shrZWCu5DHbHFezJl).
 
 
+
+### Categories
+- [Payments](#Payments)
+- [Product Management](#Product-Management)
+- [Research tools](#Research-tools)
+<hr>
 
 ### Payments
 | Provider | Description | Size | HQ | Alternative to |
