@@ -34,6 +34,10 @@
   </script>
   <script src="assets/docsify.min.js"></script>
   <script src="assets/search.min.js"></script>
-
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('sw.js')
+    }
+  </script>
 </body>
 </html>
