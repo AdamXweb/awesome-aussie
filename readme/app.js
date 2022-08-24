@@ -39,7 +39,7 @@ base('README').select({
                 readmecontent += `- [${category}](#${category.replace(/\s/g , "-")})\n`
             }
         }
-        readmecontent += `<hr>`
+        readmecontent += `<hr>\n\n`
         for (const category of categories){
             // check if category has records.
             if(await check(category))
