@@ -1,19 +1,19 @@
 {
-    "name": "aussie-gh-airtable",
-    "version": "0.1.0",
-    "description": "Awesome Aussie's Github and Airtable integrations.",
-    "dependencies": {
-      "@octokit/core": "^3.2.4",
-      "@octokit/plugin-paginate-rest": "^2.6.2",
-      "@octokit/rest": "^18.0.12",
-      "airtable": "^0.10.1",
-      "dotenv": "^8.2.0"
-    },
-    "devDependencies": {},
-    "scripts": {
-      "issues": "node issues/app.js",
-      "readme": "node readme/app.js"
-    },
-    "author": "@adamxweb",
-    "license": "MIT"
-  }
+  "name": "aussie-gh-airtable",
+  "version": "0.1.0",
+  "description": "Awesome Aussie's Github and Airtable integrations.",
+  "dependencies": {
+    "@octokit/core": "^3.2.4",
+    "@octokit/plugin-paginate-rest": "^2.6.2",
+    "@octokit/rest": "^18.0.12",
+    "airtable": "^0.10.1",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "issues": "node issues/app.js",
+    "readme": "node readme/app.js"
+  },
+  "author": "@adamxweb",
+  "license": "MIT"
+}
