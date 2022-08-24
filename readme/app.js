@@ -30,6 +30,16 @@ base('README').select({
             // add categories to a list for function below
             categories.push(record.get('Category'));
         });
+        readmecontent += `### Categories\n`
+        for (const category of categories){
+            // create top navigation
+            if (await check(category)){}
+            else{
+                console.log("ok", category)
+                readmecontent += `- [${category}](#${category.replace(/\s/g , "-")})\n`
+            }
+        }
+        readmecontent += `<hr>`
         for (const category of categories){
             // check if category has records.
             if(await check(category))
@@ -78,7 +88,6 @@ async function check(category){
         filterByFormula: searchcategory,
     }).eachPage(function page(records) {
         let resp = records.length  
-        console.log(records.length)
         // if there aren't any records move exit for next category
         if(resp <1){
             resolve(1);
