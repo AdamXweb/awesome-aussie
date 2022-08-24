@@ -59,5 +59,4 @@ jobs:
           title: '[BUILD] Daily update readme from Airtable workflow'
           base: main
           author: AdamXbot <adamxbot@users.noreply.github.com>
-          branch: main
           reviewers: AdamXweb
