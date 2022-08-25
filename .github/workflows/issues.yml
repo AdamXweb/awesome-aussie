@@ -1,4 +1,4 @@
-name: Hourly Update
+name: Add Issues to Airtable from Github
 
 on:
   push:
