@@ -1,8 +1,9 @@
 name: Sync main to Website
 on:
-#   push:
-#     branches:
-#       - main
+  push:
+    branches:
+      - main
+      - airtable
   workflow_dispatch: # Manual dispatch
   schedule:
     - cron: '0 6 * * 3' # Every Wednesday morning.
