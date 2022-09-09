@@ -31,6 +31,7 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 - [Proptech](#Proptech)
 - [Research tools](#Research-tools)
 - [SaaS](#SaaS)
+- [Social](#Social)
 - [Website builders](#Website-builders)
 <hr>
 
@@ -86,6 +87,10 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 | [Cloutly](https://cloutly.com/) | Cloutly brings all your reviews into one place, helps you collect reviews from multiple sources | Gold Coast | Birdeye |
 | [Linktree](https://linktr.ee/) | Linktree is a company that provides a platform that makes users' online content more discoverable & easy to manage. | Melbourne | link in bio |
 | [Safetyculture](https://safetyculture.com/) | Mobile-first operations platform that helps users identify issues and opportunities for businesses | Sydney | undefined |
+## Social
+| Provider | Description | HQ | Alternative to |
+| --- | --- | --- | --- |
+| [PHOTO.EXE](https://photo.breq.net) | Whimsical privacy-focused live photo filter and sharing app for iOS | Melbourne | Instagram |
 ## Website builders
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
