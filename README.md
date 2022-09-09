@@ -90,7 +90,7 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 ## Social
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
-| [PHOTO.EXE](https://photo.breq.net) | Whimsical privacy-focused live photo filter and sharing app for iOS | Melbourne | Instagram |
+| [PHOTO.EXE](https://photo.breq.net) | Whimsical privacy-focused live photo filter and sharing app for iOS | Melbourne | BitCam, Instagram |
 ## Website builders
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
