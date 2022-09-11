@@ -21,6 +21,7 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 ### Categories
 - [Company Culture](#Company-Culture)
 - [Design Tools](#Design-Tools)
+- [Edtech](#Edtech)
 - [Fintech](#Fintech)
 - [Healthtech](#Healthtech)
 - [HR](#HR)
@@ -42,10 +43,16 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
 | [Canva](https://canva.com) | Canva is an online design and publishing platform that provides user friendly design tools for non-designers. | Sydney | Adobe, Prezi |
+## Edtech
+| Provider | Description | HQ | Alternative to |
+| --- | --- | --- | --- |
+| [Stile Education](https://stileeducation.com) | Interactive science lessons based on real-world issues. The benefits of your favourite science textbook, workbook, videos, simulations, and assessments combined into a seamless teaching and learning experience. | Melbourne | Canvas, Edrolo |
 ## Fintech
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
 | [Cake](https://cakeequity.com/au/) | Equity management platform. Tools to grow your company and manage equity related matters | Brisbane | Capdesk, Pulley |
+| [Manager](https://www.manager.io/) | Accounting software for small business  | Sydney | Xero |
+| [Rounded](https://rounded.com.au) | Accounting software for freelancers and sole traders.  | Melbourne | Xero, MYOB, Intuit Quickbooks |
 ## Healthtech
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
@@ -79,6 +86,7 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
 | [Dovetail](https://dovetailapp.com/) | Dovetail is cloud-based user research and customer feedback software for the analysis, organization, collaboration and storage of data. | Sydney | Productboard |
+| [Usability Hub](https://usabilityhub.com) | UsabilityHub is a remote user research platform that takes the guesswork out of design decisions by validating them with real users. The world’s best companies rely on UsabilityHub to make better design decisions. | Melbourne | User Testing |
 ## SaaS
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
