@@ -87,6 +87,7 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 | --- | --- | --- | --- |
 | [Dovetail](https://dovetailapp.com/) | Dovetail is cloud-based user research and customer feedback software for the analysis, organization, collaboration and storage of data. | Sydney | Productboard |
 | [Usability Hub](https://usabilityhub.com) | UsabilityHub is a remote user research platform that takes the guesswork out of design decisions by validating them with real users. The world’s best companies rely on UsabilityHub to make better design decisions. | Melbourne | User Testing |
+| [OmniStar](https://www.omnistar.cloud/) | OmniStar is a cloud-based grants, ethics, and research management solution. OmniStar unifies the administration, reporting, and user experience of grants giving/receiving, human and/or animal ethics accountability, and research management lifecycle. | Canberra | InfoReady, ProposalCentral |
 ## SaaS
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
