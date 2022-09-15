@@ -9,7 +9,7 @@ You can add entries to this list by [submitting a request to Airtable](https://a
 Get started by [editing](https://github.com/AdamXweb/awesome-aussie/edit/main/README.md) the readme, committing changes to your fork, and opening a pull request upstream to this repo's main branch.
 If you are new to GitHub, [this tutorial](https://www.freecodecamp.org/news/how-to-make-your-first-pull-request-on-github/) may help you.
 
-Your request will be reviewed, then either merged, or have changes requested, or if the [Guidelines](#guidelines) are not met, it may be closed with a comment explaining why.
+Your request will be reviewed, then either merged, or have changes requested, or if the [Guidelines](#guidelines) are not met, it may be closed with a comment explaining why. View this [good example of a quality pull request](https://github.com/AdamXweb/awesome-aussie/pull/33)
 
 We are not accepting pull requests for the website at this stage. More info to come.
 
