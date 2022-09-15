@@ -6,9 +6,6 @@ name: Rebuild awesome aussie README.md
 # events but only for the master branch
 on:
   workflow_dispatch: # Manual dispatch
-  push:
-    branches:
-      - airtable
   schedule:
     # Daily at midnight utc
     - cron: "0 0 * * *"
@@ -41,7 +38,7 @@ jobs:
         env:
           AIRTABLE_API_KEY: ${{secrets.AIRTABLE_API_KEY}}
           AIRTABLE_BASE_ID: ${{ secrets.AIRTABLE_BASE_ID }}
-          
+
       # Remove unwanted items
       - name: Removing workflows and other items
         run: |
