@@ -2,14 +2,14 @@
 
 *<p align="center">A curated list of Australian based apps, software, and providers 🦘🇦🇺</p>*
 
-[⏬ Skip to Content ⏬](#Payments)
+[⏬ Skip to Content ⏬](#Company-Culture)
 
 ## Intro [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 Software, tools or popular services with a HQ down under.
 
 See aussie alternatives to the big global giants.
 
-
+Also be sure to see the [Extended List](/EXTENDED.md) with more Aussies that couldn't fit into this list!
 
 
 
@@ -26,6 +26,8 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 - [Healthtech](#Healthtech)
 - [HR](#HR)
 - [Job Search](#Job-Search)
+- [Logistics](#Logistics)
+- [Marketplace](#Marketplace)
 - [Payments](#Payments)
 - [Product Management](#Product-Management)
 - [Productivity](#Productivity)
@@ -51,8 +53,10 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
 | [Cake](https://cakeequity.com/au/) | Equity management platform. Tools to grow your company and manage equity related matters | Brisbane | Capdesk, Pulley |
+| [Hello Clever](https://helloclever.co/) | Hello Clever is a buy-to-earn ecosystem that offers payments and financial management platforms for individuals and businesses. | Sydney | Stripe, Paypal |
 | [Manager](https://www.manager.io/) | Accounting software for small business  | Sydney | Xero |
 | [Rounded](https://rounded.com.au) | Accounting software for freelancers and sole traders.  | Melbourne | Xero, MYOB, Intuit Quickbooks |
+| [Zip Co](https://www.linkedin.com/company/zip-co-limited/) | Buy Now, Pay Later (BNPL) provider available at over 90,000 locations | Sydney | Afterpay/Block, Paypal |
 ## Healthtech
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
@@ -65,6 +69,14 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
 | [Earlywork](https://www.earlywork.co/) | The professional social community for the next generation of tech talent | Sydney | Seek |
+## Logistics
+| Provider | Description | HQ | Alternative to |
+| --- | --- | --- | --- |
+| [Shippit](https://www.shippit.com/) | Shippit makes multi-carrier connectivity and carrier allocation simple. | Sydney | Sendle, standard postage |
+## Marketplace
+| Provider | Description | HQ | Alternative to |
+| --- | --- | --- | --- |
+| [RedBubble](https://redbubble.com/) | Redbubble is a marketplace of over 750,000 independent artists. They offer print on demand for popular designs. | Melbourne | society6 |
 ## Payments
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
@@ -76,18 +88,18 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 ## Productivity
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
-| [Tability](https://www.tability.io/) | Tability develops a goal-tracking software designed for OKRs, KPIs, and projects. | Sydney | undefined |
+| [Tability](https://www.tability.io/) | Tability develops a goal-tracking software designed for OKRs, KPIs, and projects. | Sydney | Ally |
 ## Proptech
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
 | [Buildpass](https://buildpass.com.au) | Construction safety software for businesses of all sizes. | Melbourne | Breadcrumb, HazardCo |
-| [Kolmeo](https://kolmeo.com/) | Kolmeo property management software that brings together owner, tenant and property manager all in one place, securely and in the cloud.  | Melbourne | undefined |
+| [Kolmeo](https://kolmeo.com/) | Kolmeo property management software that brings together owner, tenant and property manager all in one place, securely and in the cloud.  | Melbourne | Bpay, DEFT, Rentalrewards |
 ## Research tools
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
 | [Dovetail](https://dovetailapp.com/) | Dovetail is cloud-based user research and customer feedback software for the analysis, organization, collaboration and storage of data. | Sydney | Productboard |
-| [Usability Hub](https://usabilityhub.com) | UsabilityHub is a remote user research platform that takes the guesswork out of design decisions by validating them with real users. The world’s best companies rely on UsabilityHub to make better design decisions. | Melbourne | User Testing |
 | [OmniStar](https://www.omnistar.cloud/) | OmniStar is a cloud-based grants, ethics, and research management solution. OmniStar unifies the administration, reporting, and user experience of grants giving/receiving, human and/or animal ethics accountability, and research management lifecycle. | Canberra | InfoReady, ProposalCentral |
+| [Usability Hub](https://usabilityhub.com) | UsabilityHub is a remote user research platform that takes the guesswork out of design decisions by validating them with real users. The world’s best companies rely on UsabilityHub to make better design decisions. | Melbourne | User Testing |
 ## SaaS
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
