@@ -12,7 +12,8 @@
     "devDependencies": {},
     "scripts": {
       "issues": "node issues/app.js",
-      "readme": "node readme/app.js"
+      "readme": "node readme/app.js",
+      "extended": "node readme/extended.js"
     },
     "author": "@adamxweb",
     "license": "MIT"
