@@ -1,9 +1,7 @@
 name: Add Issues to Airtable from Github
 
 on:
-  push:
-    branches:
-      - airtable
+  workflow_dispatch: # Manual dispatch
   schedule:
     # Hourly
     - cron: "0 * * * *"
