@@ -2,7 +2,7 @@
 
 *<p align="center">A curated list of Australian based apps, software, and providers 🦘🇦🇺</p>*
 
-[⏬ Skip to Content ⏬](#Company-Culture)
+[⏬ Skip to Content ⏬](#Artificial-Intelligence)
 
 ## Intro [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 Software, tools or popular services with a HQ down under.
@@ -19,10 +19,15 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 
 
 ### Categories
+- [Artificial Intelligence](#Artificial-Intelligence)
+- [Business Intelligence](#Business-Intelligence)
 - [Company Culture](#Company-Culture)
 - [Design Tools](#Design-Tools)
+- [Developer Tools](#Developer-Tools)
 - [Edtech](#Edtech)
+- [Events Services](#Events-Services)
 - [Fintech](#Fintech)
+- [Food](#Food)
 - [Healthtech](#Healthtech)
 - [HR](#HR)
 - [Job Search](#Job-Search)
@@ -34,9 +39,19 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 - [Proptech](#Proptech)
 - [Research tools](#Research-tools)
 - [SaaS](#SaaS)
+- [Travel](#Travel)
 - [Website builders](#Website-builders)
 <hr>
 
+## Artificial Intelligence
+| Provider | Description | HQ | Alternative to |
+| --- | --- | --- | --- |
+| [Metigy](https://metigy.com/) | Metigy uses AI and deep learning to deliver real time insights and actions that radically enhance reach and converison | Sydney | Buffer |
+## Business Intelligence
+| Provider | Description | HQ | Alternative to |
+| --- | --- | --- | --- |
+| [Airtrack](https://airtrack.io/) | AirTrack rebuilds Trust across IT Silos by Identifying, Reconciling and Analysing Gaps and Anomalies across IT Operational Data | Melbourne | Microsoft |
+| [Willow](https://www.willowinc.com/) | Willow is a digital technology company that deploys digital twins for the built world to collect, organize, and analyze data. | Sydney | Autodesk Revit |
 ## Company Culture
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
@@ -45,10 +60,20 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
 | [Canva](https://canva.com) | Canva is an online design and publishing platform that provides user friendly design tools for non-designers. | Sydney | Adobe, Prezi |
+## Developer Tools
+| Provider | Description | HQ | Alternative to |
+| --- | --- | --- | --- |
+| [Buildkite](https://buildkite.com/) | Buildkite is a platform for running fast, secure, and scalable continuous integration pipelines on your own infrastructure. | Melbourne | Jenkins, CircleCI, AWS |
 ## Edtech
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
+| [go1](https://www.go1.com/) | Professional development, wellbeing, and compliance courses - for all employees, at all levels. | Brisbane | Linkedin, udemy, oracle |
 | [Stile Education](https://stileeducation.com) | Interactive science lessons based on real-world issues. The benefits of your favourite science textbook, workbook, videos, simulations, and assessments combined into a seamless teaching and learning experience. | Melbourne | Canvas, Edrolo |
+## Events Services
+| Provider | Description | HQ | Alternative to |
+| --- | --- | --- | --- |
+| [Humanitix](https://www.humanitix.com/au/) | Humanitix is the humane choice for tickets. We're the first and only not-for-profit ticketing platform that gives 100% of the profit from booking fees to children's charities to create a fairer and more equitable world.  | Sydney | Eventbrite |
+| [Rezdy](https://rezdy.com/) | An online booking and distribution platform powering the experiences industry. | Sydney | Bookinglive, ticketek |
 ## Fintech
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
@@ -56,7 +81,15 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 | [Hello Clever](https://helloclever.co/) | Hello Clever is a buy-to-earn ecosystem that offers payments and financial management platforms for individuals and businesses. | Sydney | Stripe, Paypal |
 | [Manager](https://www.manager.io/) | Accounting software for small business  | Sydney | Xero |
 | [Rounded](https://rounded.com.au) | Accounting software for freelancers and sole traders.  | Melbourne | Xero, MYOB, Intuit Quickbooks |
+| [Timelio](https://timelio.com.au/) | Timelio improves the financial wellbeing of business owners using technology to enable fast and flexible funding. | Melbourne | Waddle, Judo bank, Bpay |
+| [Weel](https://letsweel.com/) | Weel is an all-in-one smart corporate card and spend management platform.
+ | Sydney | SAP, payhawk |
 | [Zip Co](https://www.linkedin.com/company/zip-co-limited/) | Buy Now, Pay Later (BNPL) provider available at over 90,000 locations | Sydney | Afterpay/Block, Paypal |
+## Food
+| Provider | Description | HQ | Alternative to |
+| --- | --- | --- | --- |
+| [Me & U](https://www.meandu.com/) | A mobile ordering platform that provides a visual menu and tool for table-ordering, pickup, and delivery. | Sydney | Uber, Deliveroo, Mr Yum |
+| [Mr Yum](https://www.mryum.com/) | Mr Yum is a mobile ordering platform that provides a visual menu and tool for table-ordering, pickup, and delivery. | Melbourne | Uber, Deliveroo, abacus |
 ## Healthtech
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
@@ -65,6 +98,9 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
 | [Compono](https://www.compono.com) | Compono is a software company that provides intelligent solutions to hire, develop and engage people, by uniquely harnessing the power of data, science and technology. | Brisbane | Oracle, Workday |
+| [Deputy](https://www.deputy.com/) | Deputy is an employee management tool, simplifying scheduling, timesheets, tasks and workplace communication. | Sydney | Ento, UKG, ADP |
+| [Employment Hero](https://employmenthero.com/) | Employment Hero is a cloud-based platform that helps businesses manage HR, payroll, and employee benefits | Sydney | Workday, paycor |
+| [Ento](https://ento.com/) | Ento provide end-to-end staff management software for large shift-based workforces | Melbourne | UKG, Bamboo, ADP |
 ## Job Search
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
@@ -76,11 +112,16 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 ## Marketplace
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
+| [Airtasker](https://www.airtasker.com/) | Airtasker is an online and mobile marketplace that connects people and businesses with local community members. | Sydney | Hipages |
+| [Envato](https://www.envato.com/) | The world's leading community for creative assets and creative people, | Melbourne | Adobe, Figma, webflow |
 | [RedBubble](https://redbubble.com/) | Redbubble is a marketplace of over 750,000 independent artists. They offer print on demand for popular designs. | Melbourne | society6 |
 ## Payments
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
+| [Marmalade](https://www.withmarmalade.com.au/) | Marmalade is a world-first invoice payments platform that empowers businesses to take complete control of their cash-flow.  | Melbourne | Bpay |
+| [Tyro](https://www.tyro.com/) | Providing tailored payment solutions and value-adding business banking products to Australian businesses. (Provide EFTPOS machines) | Sydney | ingenico |
 | [Zai](https://www.hellozai.com) | Collect, refund, disburse & reconcile online payments with API automation to simplify complex payment flows. Pay & get paid instantly for operational efficiency. | Melbourne | Stripe, Paypal |
+| [Zeller](https://www.myzeller.com/) | Zeller is a payments and financial services solution for businesses to accept payments, manage their finances, and pay recipients fast. | Melbourne | Big 4 banks, Square/Block, Ingenico |
 ## Product Management
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
@@ -105,8 +146,15 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 | --- | --- | --- | --- |
 | [Atlassian](https://atlassian.com) | Tools for teams, from startup to enterprise: Atlassian provides tools such as Jira, Confluence and Trello | Sydney | Monday.com, Asana, Clickup |
 | [Cloutly](https://cloutly.com/) | Cloutly brings all your reviews into one place, helps you collect reviews from multiple sources | Gold Coast | Birdeye |
+| [Dubber](https://www.dubber.net/) | A cloud based call recording and voice AI platform. | Melbourne | Avoxi, Calln |
 | [Linktree](https://linktr.ee/) | Linktree is a company that provides a platform that makes users' online content more discoverable & easy to manage. | Melbourne | link in bio |
 | [Safetyculture](https://safetyculture.com/) | Mobile-first operations platform that helps users identify issues and opportunities for businesses | Sydney | undefined |
+| [Whispir](https://www.whispir.com/en-au/) | Whispir is a cloud platform for automating intelligent, rich communications and enabling smarter, data-driven engagement. | Melbourne | Twilio, Sendinblue |
+## Travel
+| Provider | Description | HQ | Alternative to |
+| --- | --- | --- | --- |
+| [Siteminder](https://www.siteminder.com/) | Hotel commerce solution for independents and multi-property groups: channel manager, booking engine, website design, insights and hotel apps." | Sydney | Cloudbeds, Expedia |
+| [Tashi](https://tashi.travel/) | Online booking software for accommodation providers and and tour operators. Grow your revenue, boost your bookings and delight your guests. Easy set up,… | Melbourne | Cloudbeds, Expedia |
 ## Website builders
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |

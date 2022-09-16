@@ -23,14 +23,16 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 - [Deal Sites](#Deal-Sites)
 - [eCommerce](#eCommerce)
 - [Fintech](#Fintech)
+- [Healthtech](#Healthtech)
 - [Local Business](#Local-Business)
+- [Productivity](#Productivity)
 - [SaaS](#SaaS)
 <hr>
 
 ## Artificial Intelligence
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
-| [Advanced Navigation](https://www.advancednavigation.com/) | Advanced Navigation is a privately owned Australian company that specialises in the development of navigation technologies and robotics. The company has a focus on generating products of the highest quality standard, both in terms of hardware and software. The company's founders came from a background in mission critical robotics built to military specifications and this can be seen through Advanced Navigation's products. Advanced Navigation's engineers have specialised expertise across a broad range of fields including sensors, GNSS, inertial navigation, RF technologies, acoustics, robotics, AI and algorithms. | Sydney | undefined |
+| [Advanced Navigation](https://www.advancednavigation.com/) | Advanced Navigation specialises in the development of navigation technologies and robotics.  | Sydney | undefined |
 ## Deal Sites
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
@@ -42,12 +44,24 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 ## Fintech
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
+| [Judo Bank](https://www.judo.bank) | Judo is a lender powered by the latest tech that provides personal services to SMEs | Melbourne | Big banks |
 | [Up](https://up.com.au) | Up is a digital bank designed to help you organise your money and simplify your life. Join in minutes and pay no monthly fees. - Owned by Bendigo Bank
  | Melbourne | Big 4 Banks |
+| [Waddle](https://www.waddle.com.au/) | Owned by Xero, they offer proprietary technology that leverages analytics from accounting & bank data to provide automated revolving credit lines to business. | Sydney | Judo Bank, normal bank |
+| [Moneyme](https://www.moneyme.com.au/) | MoneyMe is a platform providing unsecured personal loans to the tech-savvy, convenience-driven millennial market in Australia. | Sydney | Judo Bank |
+| [Swyftx](https://swyftx.com/au/) | Swyftx is the most progressive cryptocurrency trading site to fix several problems similar to conventional cryptocurrency platforms. | Brisbane | Coinbase, Coinspot, FTX |
+## Healthtech
+| Provider | Description | HQ | Alternative to |
+| --- | --- | --- | --- |
+| [Splose](https://splose.com) | Delightful software for Allied Health & NDIS Providers. | Adelaide | undefined |
 ## Local Business
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
 | [Good Citizens](https://www.goodcitizens.com.au/) | Sustainable sunglsses | Sydney | Big sunglass brands |
+## Productivity
+| Provider | Description | HQ | Alternative to |
+| --- | --- | --- | --- |
+| [Shortcat](https://shortcat.app/) | A keyboard productivity tool for the Mac, to enable you to control your Mac without needing to use the mouse or trackpad. | Melbourne | using a mouse |
 ## SaaS
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
