@@ -68,7 +68,7 @@ async function awesome(category){
         records.forEach(function(record) {
             console.log(category)
             console.log('Adding ', record.get('Provider'));
-            readmecontent += `| [${record.get('Provider')}](${record.get('URL')}) | ${record.get('Description')} | ${record.get('HQ')} | ${record.get('Alternative to')} |\n`;
+            readmecontent += `| [${record.get('Provider')}](${record.get('URL')}) | ${record.get('Description')} | ${record.get('HQ')} | ${record.get('Alternative to')} | ${record.get('Reason in Extended List')} |\n`;
         });
         fetchNextPage();
 
