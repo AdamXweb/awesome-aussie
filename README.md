@@ -2,7 +2,7 @@
 
 *<p align="center">A curated list of Australian based apps, software, and providers 🦘🇦🇺</p>*
 
-[⏬ Skip to Content ⏬](#Company-Culture)
+[⏬ Skip to Content ⏬](#Artificial-Intelligence)
 
 ## Intro [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 Software, tools or popular services with a HQ down under.
