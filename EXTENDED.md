@@ -33,6 +33,8 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
 | [Advanced Navigation](https://www.advancednavigation.com/) | Advanced Navigation specialises in the development of navigation technologies and robotics.  | Sydney | undefined |
+| [search.io](https://www.search.io/) | Hybrid AI-powered site search engine | Sydney | Algolia, Elastic, Solr |
+| [Hyper Anna](https://www.hyperanna.com/) | AI-powered data insights meets interactive storytelling in real time. | Sydney | Tellius, tableau, oracle |
 ## Deal Sites
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
