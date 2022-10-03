@@ -64,6 +64,7 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
 | [Buildkite](https://buildkite.com/) | Buildkite is a platform for running fast, secure, and scalable continuous integration pipelines on your own infrastructure. | Melbourne | Jenkins, CircleCI, AWS |
+| [Sublime Text](https://www.sublimetext.com/) | A sophisticated text editor for code, markup and prose. | Sydney | VS Code, Jetbrain, Atom |
 ## Edtech
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
@@ -82,6 +83,7 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 | [Hello Clever](https://helloclever.co/) | Hello Clever is a buy-to-earn ecosystem that offers payments and financial management platforms for individuals and businesses. | Sydney | Stripe, Paypal |
 | [Manager](https://www.manager.io/) | Accounting software for small business  | Sydney | Xero |
 | [Rounded](https://rounded.com.au) | Accounting software for freelancers and sole traders.  | Melbourne | Xero, MYOB, Intuit Quickbooks |
+| [Saasu](https://www.saasu.com/) | Web based accounting software for small and medium businesses | Sydney | Xero, MYOB, Intuit Quickbooks |
 | [Thriday](https://www.thriday.com.au/) | Thriday is an all-in-one business financial management platform. | Melbourne | Xero, Intuit |
 | [Timelio](https://timelio.com.au/) | Timelio improves the financial wellbeing of business owners using technology to enable fast and flexible funding. | Melbourne | Waddle, Judo bank, Bpay |
 | [Weel](https://letsweel.com/) | Weel is an all-in-one smart corporate card and spend management platform. | Sydney | SAP, payhawk |
