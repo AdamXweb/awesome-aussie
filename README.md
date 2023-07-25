@@ -148,7 +148,6 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 ## SaaS
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
-| [Atlassian](https://atlassian.com) | Tools for teams, from startup to enterprise: Atlassian provides tools such as Jira, Confluence and Trello | Sydney | Monday.com, Asana, Clickup |
 | [Cloutly](https://cloutly.com/) | Cloutly brings all your reviews into one place, helps you collect reviews from multiple sources | Gold Coast | Birdeye |
 | [Dubber](https://www.dubber.net/) | A cloud based call recording and voice AI platform. | Melbourne | Avoxi, Calln |
 | [Linktree](https://linktr.ee/) | Linktree is a company that provides a platform that makes users' online content more discoverable & easy to manage. | Melbourne | link in bio |

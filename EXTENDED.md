@@ -66,6 +66,7 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 | [Omny Studio](https://omnystudio.com/) | Podcast technology platform helping teams share their content | Melbourne | Stitcher, Apple, Google, Spotify | Acquired by a US based company, Triton Digital |
 | [Nitro](https://gonitro.com) | PDF and e-sign tools to create, manage and share documents  | Moved OS - Aussie born | Adobe, docusign | HQ has moved Overseas to the US. see #19 to discuss. |
 | [Cascade](https://www.cascade.app/) | Strategy execution platform that helps organizations make their visions happen, through building their business and departmental plans, right through to tracking and execution of initiatives, team performance and more. | Moved OS - Aussie born | gtmhub, creately | HQ has moved Overseas to the US. see #75 to discuss. |
+| [Atlassian](https://atlassian.com) | Tools for teams, from startup to enterprise: Atlassian provides tools such as Jira, Confluence and Trello | Sydney | Monday.com, Asana, Clickup | Moved HQ to the US. Now a Delaware company |
 ### Contributing
 
 *Thanks for visiting! If you have suggestions, then you could [submit a new request to Airtable](https://airtable.com/shrNN6YAp7zPwsNom), [open an issue](https://github.com/AdamXweb/awesome-aussie/issues/new/choose), or [submit a PR](https://github.com/AdamXweb/awesome-aussie/pull/new/main), see: [`CONTRIBUTING.md`](/.github/CONTRIBUTING.md). Contributions are welcome, and always much appreciated* ☺️
