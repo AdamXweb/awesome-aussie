@@ -42,12 +42,7 @@ jobs:
       # Remove unwanted items
       - name: Removing workflows and other items
         run: |
-          rm -rf .github/workflows
-          rm -rf issues
-          rm -rf readme
-          rm package.json
           rm package-lock.json
-          rm .gitignore
           rm -rf node_modules
           git config user.name "AdamXbot"
           git config user.email 'adamxbot@users.noreply.github.com'
