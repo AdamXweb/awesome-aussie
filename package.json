@@ -1,0 +1,33 @@
+{
+  "name": "aussie-gh-airtable",
+  "version": "0.1.0",
+  "description": "Awesome Aussie's Github and Airtable integrations.",
+  "dependencies": {
+    "@octokit/core": "^3.2.4",
+    "@octokit/plugin-paginate-rest": "^2.6.2",
+    "@octokit/rest": "^18.0.12",
+    "airtable": "^0.10.1",
+    "dotenv": "^8.2.0",
+    "readme-airtable": "^0.1.2"
+  },
+  "scripts": {
+    "issues": "node node_modules/readme-airtable/issues/app.js",
+    "readme": "node node_modules/readme-airtable/readme/app.js",
+    "extended": "node node_modules/readme-airtable/readme/extended.js"
+  },
+  "author": "@adamxweb",
+  "license": "CC0-1.0",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdamXweb/awesome-aussie.git"
+  },
+  "keywords": [
+    "awesome",
+    "aussie"
+  ],
+  "bugs": {
+    "url": "https://github.com/AdamXweb/awesome-aussie/issues"
+  },
+  "homepage": "https://github.com/AdamXweb/awesome-aussie#readme"
+}
