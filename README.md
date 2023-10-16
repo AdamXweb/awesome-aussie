@@ -19,7 +19,6 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 
 
 ### Categories
-- [Artificial Intelligence](#Artificial-Intelligence)
 - [Business Intelligence](#Business-Intelligence)
 - [Company Culture](#Company-Culture)
 - [Design Tools](#Design-Tools)
@@ -43,10 +42,6 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 - [Website builders](#Website-builders)
 <hr>
 
-## Artificial Intelligence
-| Provider | Description | HQ | Alternative to |
-| --- | --- | --- | --- |
-| [Metigy](https://metigy.com/) | Metigy uses AI and deep learning to deliver real time insights and actions that radically enhance reach and converison | Sydney | Buffer |
 ## Business Intelligence
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
