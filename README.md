@@ -19,6 +19,7 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 
 
 ### Categories
+
 - [Business Intelligence](#Business-Intelligence)
 - [Company Culture](#Company-Culture)
 - [Design Tools](#Design-Tools)
@@ -42,6 +43,7 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 - [Website builders](#Website-builders)
 <hr>
 
+
 ## Business Intelligence
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
@@ -60,6 +62,7 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 | --- | --- | --- | --- |
 | [Buildkite](https://buildkite.com/) | Buildkite is a platform for running fast, secure, and scalable continuous integration pipelines on your own infrastructure. | Melbourne | Jenkins, CircleCI, AWS |
 | [Sublime Text](https://www.sublimetext.com/) | A sophisticated text editor for code, markup and prose. | Sydney | VS Code, Jetbrain, Atom |
+
 ## Edtech
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |

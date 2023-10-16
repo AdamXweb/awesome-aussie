@@ -23,6 +23,7 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 - [Deal Sites](#Deal-Sites)
 - [eCommerce](#eCommerce)
 - [Fintech](#Fintech)
+- [Healthtech](#Healthtech)
 - [Local Business](#Local-Business)
 - [Productivity](#Productivity)
 - [SaaS](#SaaS)
@@ -34,6 +35,7 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 | [search.io](https://www.search.io/) | Hybrid AI-powered site search engine | Sydney | Algolia, Elastic, Solr | Acquired by a US based company, Algolia |
 | [Hyper Anna](https://www.hyperanna.com/) | AI-powered data insights meets interactive storytelling in real time. | Sydney | Tellius, tableau, oracle | Acquired by a US based company, Alteryx |
 | [Advanced Navigation](https://www.advancednavigation.com/) | Advanced Navigation specialises in the development of navigation technologies and robotics.  | Sydney | Inertial Labs | Focus is on physical sale of products over a platform/SaaS offering. Not available for most consumers |
+
 ## Deal Sites
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
@@ -60,6 +62,7 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
 | [Shortcat](https://shortcat.app/) | A keyboard productivity tool for the Mac, to enable you to control your Mac without needing to use the mouse or trackpad. | Melbourne | using a mouse | Project with single function, limited business information |
+
 ## SaaS
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
