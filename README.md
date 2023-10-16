@@ -19,7 +19,7 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 
 
 ### Categories
-- [Artificial Intelligence](#Artificial-Intelligence)
+
 - [Business Intelligence](#Business-Intelligence)
 - [Company Culture](#Company-Culture)
 - [Design Tools](#Design-Tools)
@@ -43,10 +43,7 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 - [Website builders](#Website-builders)
 <hr>
 
-## Artificial Intelligence
-| Provider | Description | HQ | Alternative to |
-| --- | --- | --- | --- |
-| [Metigy](https://metigy.com/) | Metigy uses AI and deep learning to deliver real time insights and actions that radically enhance reach and converison | Sydney | Buffer |
+
 ## Business Intelligence
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
@@ -64,10 +61,13 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
 | [Buildkite](https://buildkite.com/) | Buildkite is a platform for running fast, secure, and scalable continuous integration pipelines on your own infrastructure. | Melbourne | Jenkins, CircleCI, AWS |
+| [Sublime Text](https://www.sublimetext.com/) | A sophisticated text editor for code, markup and prose. | Sydney | VS Code, Jetbrain, Atom |
+
 ## Edtech
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
 | [go1](https://www.go1.com/) | Professional development, wellbeing, and compliance courses - for all employees, at all levels. | Brisbane | Linkedin, udemy, oracle |
+| [Moodle](http://moodle.com/) | Moodle is a free and open-source software learning platform. | Perth | Canvas, Blackboard |
 | [Stile Education](https://stileeducation.com) | Interactive science lessons based on real-world issues. The benefits of your favourite science textbook, workbook, videos, simulations, and assessments combined into a seamless teaching and learning experience. | Melbourne | Canvas, Edrolo |
 ## Events Services
 | Provider | Description | HQ | Alternative to |
@@ -81,9 +81,10 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 | [Hello Clever](https://helloclever.co/) | Hello Clever is a buy-to-earn ecosystem that offers payments and financial management platforms for individuals and businesses. | Sydney | Stripe, Paypal |
 | [Manager](https://www.manager.io/) | Accounting software for small business  | Sydney | Xero |
 | [Rounded](https://rounded.com.au) | Accounting software for freelancers and sole traders.  | Melbourne | Xero, MYOB, Intuit Quickbooks |
+| [Saasu](https://www.saasu.com/) | Web based accounting software for small and medium businesses | Sydney | Xero, MYOB, Intuit Quickbooks |
+| [Thriday](https://www.thriday.com.au/) | Thriday is an all-in-one business financial management platform. | Melbourne | Xero, Intuit |
 | [Timelio](https://timelio.com.au/) | Timelio improves the financial wellbeing of business owners using technology to enable fast and flexible funding. | Melbourne | Waddle, Judo bank, Bpay |
-| [Weel](https://letsweel.com/) | Weel is an all-in-one smart corporate card and spend management platform.
- | Sydney | SAP, payhawk |
+| [Weel](https://letsweel.com/) | Weel is an all-in-one smart corporate card and spend management platform. | Sydney | SAP, payhawk |
 | [Zip Co](https://www.linkedin.com/company/zip-co-limited/) | Buy Now, Pay Later (BNPL) provider available at over 90,000 locations | Sydney | Afterpay/Block, Paypal |
 ## Food
 | Provider | Description | HQ | Alternative to |
@@ -129,6 +130,7 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 ## Productivity
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
+| [Fastmail](https://www.fastmail.com) | Email, calendars and contacts done right. | Melbourne | Gmail, Office365 |
 | [Tability](https://www.tability.io/) | Tability develops a goal-tracking software designed for OKRs, KPIs, and projects. | Sydney | Ally |
 ## Proptech
 | Provider | Description | HQ | Alternative to |
@@ -144,7 +146,6 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 ## SaaS
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
-| [Atlassian](https://atlassian.com) | Tools for teams, from startup to enterprise: Atlassian provides tools such as Jira, Confluence and Trello | Sydney | Monday.com, Asana, Clickup |
 | [Cloutly](https://cloutly.com/) | Cloutly brings all your reviews into one place, helps you collect reviews from multiple sources | Gold Coast | Birdeye |
 | [Dubber](https://www.dubber.net/) | A cloud based call recording and voice AI platform. | Melbourne | Avoxi, Calln |
 | [Linktree](https://linktr.ee/) | Linktree is a company that provides a platform that makes users' online content more discoverable & easy to manage. | Melbourne | link in bio |

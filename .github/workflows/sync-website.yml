@@ -1,0 +1,29 @@
+name: Sync main to Website
+on:
+  workflow_run:
+    workflows: ["Rebuild awesome aussie README.md"]
+    branches: ['main', 'airtable']
+    types: 
+      - completed
+
+jobs:
+  sync-branches:
+    runs-on: ubuntu-latest
+    name: Syncing branches
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Set up Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Opening pull request
+        id: pull
+        uses: tretuna/sync-branches@1.4.0
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FROM_BRANCH: main
+          TO_BRANCH: gh-pages
+          PULL_REQUEST_TITLE: '[AUTO] Update docs site'
+          PULL_REQUEST_BODY: |
+            Merging main into gh-pages, to be deployed to [awesome-aussie.com](https://awesome-aussie.com/).
