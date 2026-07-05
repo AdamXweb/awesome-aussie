@@ -2,7 +2,7 @@ name: Sync main to Website
 on:
   workflow_run:
     workflows: ["Rebuild awesome aussie README.md"]
-    branches: ['main', 'airtable']
+    branches: ['main']
     types: 
       - completed
 

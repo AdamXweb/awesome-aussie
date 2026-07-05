@@ -1,61 +1,79 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Rebuild awesome aussie README.md
 
 on:
   push:
-    branches: "main"   
-  workflow_dispatch: # Manual dispatch
+    branches: "main"
+  workflow_dispatch:
   schedule:
-    # Daily at midnight utc
+    # Daily at midnight UTC
     - cron: "0 0 * * *"
 
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
-      - name: Setup Node
-        uses: actions/setup-node@v1
-        with:
-          node-version: "14.x"
-      - name: Install Dependencies
-        run: npm install
-      - name: Build README from Airtable
-        run: npm run readme
-        env:
-          AIRTABLE_API_KEY: ${{secrets.AIRTABLE_API_KEY}}
-          AIRTABLE_BASE_ID: ${{ secrets.AIRTABLE_BASE_ID }}
-      - name: Build EXTENDED list from Airtable
-        run: npm run extended
-        env:
-          AIRTABLE_API_KEY: ${{secrets.AIRTABLE_API_KEY}}
-          AIRTABLE_BASE_ID: ${{ secrets.AIRTABLE_BASE_ID }}
+      - uses: actions/checkout@v4
 
-      # Remove unwanted items
-      - name: Removing workflows and other items
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20.x"
+          cache: pnpm
+
+      - name: Install Dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Verify Baserow schema
+        run: pnpm run check-schema
+        env:
+          BASEROW_API_TOKEN: ${{ secrets.BASEROW_API_TOKEN }}
+          BASEROW_API_BASE_URL: ${{ secrets.BASEROW_API_BASE_URL }}
+          BASEROW_PROVIDERS_TABLE_ID: ${{ secrets.BASEROW_PROVIDERS_TABLE_ID }}
+          BASEROW_CATEGORIES_TABLE_ID: ${{ secrets.BASEROW_CATEGORIES_TABLE_ID }}
+          BASEROW_README_BLOCKS_TABLE_ID: ${{ secrets.BASEROW_README_BLOCKS_TABLE_ID }}
+
+      - name: Build README from Baserow
+        run: pnpm run readme
+        env:
+          BASEROW_API_TOKEN: ${{ secrets.BASEROW_API_TOKEN }}
+          BASEROW_API_BASE_URL: ${{ secrets.BASEROW_API_BASE_URL }}
+          BASEROW_PROVIDERS_TABLE_ID: ${{ secrets.BASEROW_PROVIDERS_TABLE_ID }}
+          BASEROW_CATEGORIES_TABLE_ID: ${{ secrets.BASEROW_CATEGORIES_TABLE_ID }}
+          BASEROW_README_BLOCKS_TABLE_ID: ${{ secrets.BASEROW_README_BLOCKS_TABLE_ID }}
+          README_STATUSES: Active - Awesome List
+
+      - name: Build EXTENDED list from Baserow
+        run: pnpm run extended
+        env:
+          BASEROW_API_TOKEN: ${{ secrets.BASEROW_API_TOKEN }}
+          BASEROW_API_BASE_URL: ${{ secrets.BASEROW_API_BASE_URL }}
+          BASEROW_PROVIDERS_TABLE_ID: ${{ secrets.BASEROW_PROVIDERS_TABLE_ID }}
+          BASEROW_CATEGORIES_TABLE_ID: ${{ secrets.BASEROW_CATEGORIES_TABLE_ID }}
+          BASEROW_README_BLOCKS_TABLE_ID: ${{ secrets.BASEROW_README_BLOCKS_TABLE_ID }}
+          EXTENDED_STATUSES: Active - Extended List
+
+      - name: Stage rebuilt files
         run: |
-          rm package-lock.json
           rm -rf node_modules
           git config user.name "AdamXbot"
           git config user.email 'adamxbot@users.noreply.github.com'
           git add .
-          msg="rebuilding readme from airtable for $(date)"
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          msg="rebuilding readme from baserow for $(date)"
           git commit -m "$msg"
-      # Create pull request of changes to main branch
+
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v6
         with:
-          branch: airtable-updates/patch
+          branch: baserow-updates/patch
           delete-branch: true
-          title: '[BUILD] Daily update readme from Airtable workflow'
+          title: '[BUILD] Daily update readme from Baserow workflow'
           base: main
           author: AdamXbot <adamxbot@users.noreply.github.com>
           reviewers: AdamXweb

@@ -1,6 +1,6 @@
 name: Addition
-description: Suggest a project to be added to the list
-title: '[ADDITION] <title>'
+description: Suggest a new entry to be added to the list
+title: '[ADDITION] <provider name>'
 labels: ['Addition', 'Awaiting Review']
 assignees:
   - AdamXweb
@@ -8,66 +8,135 @@ body:
   - type: markdown
     attributes:
       value: |-
-        ## If possible, please make a subission via Airtable
-        The easiest way to get an addition is to submit the new entity directly into [Airtable via our form.](https://airtable.com/shrNN6YAp7zPwsNom)<br>
-        This saves some doubling up, however we are keeping issues open to cater for the broader community if they don't agree to Airtable's TOS or Privacy policy.
-    validations:
-      required: false
+        ## Thanks for suggesting an addition 🇦🇺
+        The fields below feed straight into our vetting pipeline in Baserow.
+        Filling them out completely lets us review your submission much faster
+        (no back-and-forth chasing details).
 
-  # Software Category
+  - type: input
+    id: provider
+    attributes:
+      label: Provider / Project name
+      description: The exact name to display in the README.
+      placeholder: e.g. Atlassian
+    validations:
+      required: true
+
+  - type: input
+    id: website
+    attributes:
+      label: Website URL
+      description: The canonical website (we use this for the README link).
+      placeholder: https://example.com.au
+    validations:
+      required: true
+
+  - type: input
+    id: linkedin
+    attributes:
+      label: LinkedIn company URL
+      description: >-
+        Used to verify HQ, headcount, and that this is a real company.
+        Paste the LinkedIn /company/ URL.
+      placeholder: https://www.linkedin.com/company/example
+    validations:
+      required: true
+
+  - type: input
+    id: abn
+    attributes:
+      label: Australian Business Number (ABN)
+      description: >-
+        11-digit ABN. We verify it via the
+        [ABR lookup](https://abr.business.gov.au) to confirm the entity is
+        registered in Australia. If you can't find an ABN, put `unknown`
+        and explain why in the description below.
+      placeholder: '12 345 678 901'
+    validations:
+      required: true
+
+  - type: input
+    id: hq
+    attributes:
+      label: Head office (city, state)
+      description: Primary HQ location, in the format "City, STATE".
+      placeholder: Sydney, NSW
+    validations:
+      required: true
+
   - type: input
     id: category
     attributes:
       label: Category
       description: >-
-        Specify a category from [this list](https://github.com/AdamXweb/awesome-aussie#categories),
-        or suggest a new one
+        Choose one from the
+        [existing categories](https://github.com/AdamXweb/awesome-aussie#categories),
+        or propose a new one.
       placeholder: e.g. Design Tools
     validations:
       required: true
 
-  # Software name + description
-  - type: textarea
-    id: intro
-    attributes:
-      label: Software to be added
-      description: >-
-        Please specify the software / service you would like adding,
-        and briefly describe what it is, and why it should be included in the list
-      placeholder: 
-    validations:
-      required: true
-
-  # Software supporting material
-  - type: textarea
-    id: supporting-material
-    attributes:
-      label: Supporting Material
-      description: >-
-        Please include links to any relevant supporting material, like the projects GitHub repo,
-        website / docs, any linkedin or crunchbase pages supporting that they are an aussie service
-      placeholder: 
-    validations:
-      required: true
-
-  # Association disclosure
   - type: input
-    id: association
+    id: alternative-to
     attributes:
-      label: Association Disclosure
+      label: Alternative to
       description: >-
-        For transparency, please state weather you currently/ previously have had any association with
-        this project in any form. \nIf you have, then please also specify the context of your involvement
-      placeholder:
+        Comma-separated list of overseas/non-Aussie equivalents this provider
+        replaces. Helps readers find the right tool quickly.
+      placeholder: Figma, Sketch
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: One-line description
+      description: A short, neutral description (max ~140 characters).
+      placeholder: Cloud-based design platform for non-designers.
+    validations:
+      required: true
+
+  - type: input
+    id: extended-reason
+    attributes:
+      label: Reason for the Extended list (optional)
+      description: >-
+        If you think this belongs in EXTENDED.md rather than (or as well as)
+        the main README, give the reason here. Leave blank for main-list-only.
+      placeholder: Niche but high-quality alternative for X.
     validations:
       required: false
 
-  # Can user submit PR
+  - type: textarea
+    id: supporting-material
+    attributes:
+      label: Supporting links (optional)
+      description: >-
+        Any extra material that helps us verify - GitHub repo, Crunchbase
+        page, news coverage, AppStore link, etc.
+      placeholder: |
+        - https://github.com/example/repo
+        - https://www.crunchbase.com/organization/example
+    validations:
+      required: false
+
+  - type: input
+    id: association
+    attributes:
+      label: Association disclosure
+      description: >-
+        Are you affiliated with this project? (Founder, employee, investor,
+        contractor, none, etc.) For transparency only - we still accept good
+        submissions from people who built the thing.
+      placeholder: 'Founder / Employee / None'
+    validations:
+      required: true
+
   - type: dropdown
     id: canImplement
     attributes:
       label: Would you like to submit a PR?
-      description: Is this addition something that you are willing to submit a pull request for?
+      description: Optional - lets us prioritise reviewer attention.
       options:
         - 'No.'
         - 'Maybe?'
@@ -75,31 +144,31 @@ body:
     validations:
       required: false
 
-  # Confirmation checkboxes
   - type: checkboxes
-    id: idiot-check
+    id: confirmations
     attributes:
-      label: Please tick the boxes
-      description: Before submitting, please ensure that
+      label: Final confirmations
       options:
-        - label: You have filled out this form accurately, and to the best of your knowledge
+        - label: I've filled this out accurately and to the best of my knowledge.
           required: true
-        - label: You have indicated if you are associated with this project or a competitor
+        - label: I've disclosed any association with this provider.
           required: true
-        - label: A similar submission has not already [been opened](https://github.com/AdamXweb/awesome-aussie/issues?q=is%3Aissue) for this software/ service
+        - label: >-
+            I've checked that no
+            [open issue](https://github.com/AdamXweb/awesome-aussie/issues?q=is%3Aissue)
+            already covers this provider.
           required: true
-        - label: The item is not on the [Airtable master list](https://airtable.com/shruokTjBBXkElK4n)
+        - label: >-
+            I agree to the
+            [code of conduct](https://github.com/AdamXweb/awesome-aussie/blob/main/.github/CODE_OF_CONDUCT.md).
           required: true
-        - label: You agree to the [code of conduct](https://github.com/AdamXweb/awesome-aussie/blob/master/.github/CODE_OF_CONDUCT.md)
-          required: true
-  
-  # Final message
+
   - type: markdown
     attributes:
       value: |-
-        ## Thanks 🙏
-        <img align="left" width="160" src="https://media.giphy.com/media/3oEdva9BUHPIs2SkGk/giphy.gif" alt="👾" />
-        Thank you for your suggested removal! You should expect a reply within 48 hours.<br>
-        ⭐️ Consider dropping the repo a star if you're enjoying Awesome Aussie.<br>
-    validations:
-      required: false
+        ## What happens next
+        Submissions move through this pipeline in Baserow:
+        **Backlog → In Vetting → Ready to Publish → Published.**
+        You should expect a first response within 48 hours. The README and
+        EXTENDED list rebuild daily, so once your entry is marked
+        *Published* it'll appear within 24 hours.

@@ -4,7 +4,7 @@
 
 ### How to make an Addition
 
-You can add entries to this list by [submitting a request to Airtable](https://airtable.com/shrNN6YAp7zPwsNom), or by opening a pull request.
+You can add entries to this list by [opening an addition request](https://github.com/AdamXweb/awesome-aussie/issues/new?template=addition.yml), or by opening a pull request.
 
 Get started by [editing](https://github.com/AdamXweb/awesome-aussie/edit/main/README.md) the readme, committing changes to your fork, and opening a pull request upstream to this repo's main branch.
 If you are new to GitHub, [this tutorial](https://www.freecodecamp.org/news/how-to-make-your-first-pull-request-on-github/) may help you.

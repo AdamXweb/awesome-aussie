@@ -1,23 +1,31 @@
 {
-  "name": "aussie-gh-airtable",
-  "version": "0.1.0",
-  "description": "Awesome Aussie's Github and Airtable integrations.",
+  "name": "awesome-aussie-baserow",
+  "version": "0.2.0",
+  "description": "Awesome Aussie's GitHub and Baserow integrations.",
   "dependencies": {
-    "@octokit/core": "^3.2.4",
-    "@octokit/plugin-paginate-rest": "^2.6.2",
-    "@octokit/rest": "^18.0.12",
-    "airtable": "^0.10.1",
-    "dotenv": "^8.2.0",
-    "readme-airtable": "^0.1.2"
+    "@octokit/core": "^5.2.0",
+    "@octokit/plugin-paginate-rest": "^9.2.1",
+    "@octokit/rest": "^20.1.1",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "airtable": "^0.12.2"
   },
   "scripts": {
-    "issues": "node node_modules/readme-airtable/issues/app.js",
-    "readme": "node node_modules/readme-airtable/readme/app.js",
-    "extended": "node node_modules/readme-airtable/readme/extended.js"
+    "readme": "node scripts/build-readme.js",
+    "extended": "node scripts/build-readme.js --extended",
+    "issues": "node scripts/sync-github-issues.js",
+    "check-schema": "node scripts/check-baserow-schema.js",
+    "migrate": "node scripts/migrate-airtable-to-baserow.js",
+    "check-links": "node scripts/check-links.js"
   },
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=9"
+  },
+  "packageManager": "pnpm@10.5.0",
   "author": "@adamxweb",
   "license": "CC0-1.0",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AdamXweb/awesome-aussie.git"

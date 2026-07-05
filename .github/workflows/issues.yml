@@ -1,7 +1,7 @@
-name: Add Issues to Airtable from Github
+name: Sync Github Issues to Baserow
 
 on:
-  workflow_dispatch: # Manual dispatch
+  workflow_dispatch:
   schedule:
     # Hourly
     - cron: "0 * * * *"
@@ -10,18 +10,33 @@ jobs:
   syncissues:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js 14.x
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          node-version: 14.x
-      - run: npm install
-      - name: Syncing Issues from Github to Airtable
-        run: npm run issues
+          node-version: "20.x"
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Verify Baserow issue table
+        run: pnpm run check-schema
         env:
-          AIRTABLE_API_KEY: ${{ secrets.AIRTABLE_API_KEY }}
-          AIRTABLE_BASE_ID: ${{ secrets.AIRTABLE_BASE_ID }}
-          AIRTABLE_TABLE_ID_ISSUES: ${{ secrets.AIRTABLE_TABLE_ID_ISSUES }}
+          BASEROW_API_TOKEN: ${{ secrets.BASEROW_API_TOKEN }}
+          BASEROW_API_BASE_URL: ${{ secrets.BASEROW_API_BASE_URL }}
+          BASEROW_PROVIDERS_TABLE_ID: ${{ secrets.BASEROW_PROVIDERS_TABLE_ID }}
+          BASEROW_GITHUB_ISSUES_TABLE_ID: ${{ secrets.BASEROW_GITHUB_ISSUES_TABLE_ID }}
+
+      - name: Sync Github issues into Baserow
+        run: pnpm run issues
+        env:
+          BASEROW_API_TOKEN: ${{ secrets.BASEROW_API_TOKEN }}
+          BASEROW_API_BASE_URL: ${{ secrets.BASEROW_API_BASE_URL }}
+          BASEROW_GITHUB_ISSUES_TABLE_ID: ${{ secrets.BASEROW_GITHUB_ISSUES_TABLE_ID }}
           GH_API_TOKEN: ${{ secrets.GH_API_TOKEN }}
-      - name: Add Issues To GitHub projects
-        uses: actions/add-to-project@v0.3.0
+          GH_OWNER: AdamXweb
+          GH_REPO: awesome-aussie

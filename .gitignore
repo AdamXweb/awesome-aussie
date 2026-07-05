@@ -1,2 +1,10 @@
 node_modules
 .env
+.env.local
+
+# pnpm is the source of truth - reject npm/yarn lockfiles to avoid drift.
+package-lock.json
+yarn.lock
+
+# Local pnpm store (only appears with `store-dir=.pnpm-store`).
+.pnpm-store

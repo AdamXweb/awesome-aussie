@@ -2,7 +2,7 @@
 name: Mirror to Codeberg
 on:
   push:
-    branches: [ 'main', 'airtable' ]    
+    branches: [ 'main' ]
   workflow_dispatch: # Manual dispatch
   schedule:
     - cron: '0 6 * * 3'
