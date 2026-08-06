@@ -28,6 +28,5 @@ jobs:
           # authenticates with the checkout's GITHUB_TOKEN.
       - name: Push main to gh-pages
         # gh-pages mirrors main for awesome-aussie.com. --force is required
-        # because the old PR-based sync left merge commits on gh-pages that
-        # main does not have.
+        # because gh-pages carries commits that main does not have.
         run: git push --force origin main:gh-pages
