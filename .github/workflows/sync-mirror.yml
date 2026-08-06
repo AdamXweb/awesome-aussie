@@ -2,18 +2,26 @@
 name: Mirror to Codeberg
 on:
   push:
-    branches: [ 'main', 'airtable' ]    
+    branches: [ 'main', 'airtable' ]
   workflow_dispatch: # Manual dispatch
   schedule:
     - cron: '0 6 * * 3'
+
+permissions:
+  contents: read
+
 jobs:
   codeberg:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
         with:
           fetch-depth: 0
-      - uses: pixta-dev/repository-mirroring-action@v1
+          # The mirror push authenticates with the SSH key below;
+          # don't leave GitHub credentials in the checkout.
+          persist-credentials: false
+      - uses: pixta-dev/repository-mirroring-action@674e65a7d483ca28dafaacba0d07351bdcc8bd75 # v1.1.1
         with:
           target_repo_url: "git@codeberg.org:adamxweb/awesome-aussie.git"
           ssh_private_key: ${{ secrets.BOT_SSH }}

@@ -1,48 +1,56 @@
-# This is a basic workflow to help you get started with Actions
+# Rebuilds README.md and EXTENDED.md from Airtable and opens a PR with the result
 
 name: Rebuild awesome aussie README.md
 
 on:
   push:
-    branches: "main"   
+    branches: "main"
   workflow_dispatch: # Manual dispatch
   schedule:
     # Daily at midnight utc
     - cron: "0 0 * * *"
 
+permissions:
+  contents: read
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
+    timeout-minutes: 15
+    permissions:
+      # create-pull-request pushes the update branch and opens the PR
+      contents: write
+      pull-requests: write
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
-      - name: Setup Node
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
         with:
-          node-version: "14.x"
+          # create-pull-request authenticates with its own token input;
+          # don't leave credentials in the checkout.
+          persist-credentials: false
+      - name: Setup pnpm
+        uses: pnpm/action-setup@0977fd99725f1db4007ccb2928dbb4e90d06cc86 # v6.0.10
+      - name: Setup Node
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
       - name: Install Dependencies
-        run: npm install
+        run: pnpm install --frozen-lockfile
       - name: Build README from Airtable
-        run: npm run readme
+        run: pnpm run readme
         env:
           AIRTABLE_API_KEY: ${{secrets.AIRTABLE_API_KEY}}
           AIRTABLE_BASE_ID: ${{ secrets.AIRTABLE_BASE_ID }}
       - name: Build EXTENDED list from Airtable
-        run: npm run extended
+        run: pnpm run extended
         env:
           AIRTABLE_API_KEY: ${{secrets.AIRTABLE_API_KEY}}
           AIRTABLE_BASE_ID: ${{ secrets.AIRTABLE_BASE_ID }}
 
       # Remove unwanted items
-      - name: Removing workflows and other items
+      - name: Removing installed dependencies and committing changes
         run: |
-          rm package-lock.json
           rm -rf node_modules
           git config user.name "AdamXbot"
           git config user.email 'adamxbot@users.noreply.github.com'
@@ -51,7 +59,7 @@ jobs:
           git commit -m "$msg"
       # Create pull request of changes to main branch
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
         with:
           branch: airtable-updates/patch
           delete-branch: true
