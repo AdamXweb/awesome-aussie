@@ -3,31 +3,27 @@ on:
   workflow_run:
     workflows: ["Rebuild awesome aussie README.md"]
     branches: ['main', 'airtable']
-    types:
+    types: 
       - completed
-
-permissions:
-  contents: read
 
 jobs:
   sync-branches:
-    # Only sync the website when the rebuild actually succeeded
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     name: Syncing branches
-    timeout-minutes: 10
-    permissions:
-      contents: write
     steps:
       - name: Checkout
-        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+        uses: actions/checkout@v2
+      - name: Set up Node
+        uses: actions/setup-node@v1
         with:
-          ref: main
-          fetch-depth: 0
-          # persist-credentials stays at the default (true): the push below
-          # authenticates with the checkout's GITHUB_TOKEN.
-      - name: Push main to gh-pages
-        # gh-pages mirrors main for awesome-aussie.com. --force is required
-        # because the old PR-based sync left merge commits on gh-pages that
-        # main does not have.
-        run: git push --force origin main:gh-pages
+          node-version: 12
+      - name: Opening pull request
+        id: pull
+        uses: tretuna/sync-branches@1.4.0
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FROM_BRANCH: main
+          TO_BRANCH: gh-pages
+          PULL_REQUEST_TITLE: '[AUTO] Update docs site'
+          PULL_REQUEST_BODY: |
+            Merging main into gh-pages, to be deployed to [awesome-aussie.com](https://awesome-aussie.com/).

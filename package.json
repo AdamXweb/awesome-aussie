@@ -2,7 +2,6 @@
   "name": "aussie-gh-airtable",
   "version": "0.1.0",
   "description": "Awesome Aussie's Github and Airtable integrations.",
-  "packageManager": "pnpm@11.1.3",
   "dependencies": {
     "@octokit/core": "^3.2.4",
     "@octokit/plugin-paginate-rest": "^2.6.2",
