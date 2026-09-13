@@ -18,8 +18,8 @@ importers:
         specifier: ^18.0.12
         version: 18.12.0
       airtable:
-        specifier: ^0.10.1
-        version: 0.10.1
+        specifier: ^0.12.0
+        version: 0.12.2
       dotenv:
         specifier: ^8.2.0
         version: 8.6.0
@@ -83,6 +83,10 @@ packages:
 
   airtable@0.10.1:
     resolution: {integrity: sha512-obFW+R3ly2mKtCj0D/xto0ggUvYwdM0RJT3VJ9wvgqoxDkzqg2mNtkuTNfYjF6wWQA0GvoHG9guqzgBBqFjItw==}
+    engines: {node: '>=8.0.0'}
+
+  airtable@0.12.2:
+    resolution: {integrity: sha512-HS3VytUBTKj8A0vPl7DDr5p/w3IOGv6RXL0fv7eczOWAtj9Xe8ri4TAiZRXoOyo+Z/COADCj+oARFenbxhmkIg==}
     engines: {node: '>=8.0.0'}
 
   before-after-hook@2.2.3:
@@ -224,6 +228,16 @@ snapshots:
   abortcontroller-polyfill@1.7.8: {}
 
   airtable@0.10.1:
+    dependencies:
+      '@types/node': 14.18.63
+      abort-controller: 3.0.0
+      abortcontroller-polyfill: 1.7.8
+      lodash: 4.18.1
+      node-fetch: 2.7.0
+    transitivePeerDependencies:
+      - encoding
+
+  airtable@0.12.2:
     dependencies:
       '@types/node': 14.18.63
       abort-controller: 3.0.0
