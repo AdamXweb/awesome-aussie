@@ -1,0 +1,5 @@
+managePackageManagerVersions: false
+overrides:
+  "@octokit/request@<8.4.1": "^8.4.1"
+  "@octokit/request-error@<5.1.1": "^5.1.1"
+  "@octokit/plugin-paginate-rest@<9.2.2": "^9.2.2"
