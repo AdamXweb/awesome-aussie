@@ -77,6 +77,7 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 | [Cake](https://cakeequity.com/au/) | Equity management platform. Tools to grow your company and manage equity related matters | Brisbane | Capdesk, Pulley |
 | [Hello Clever](https://helloclever.co/) | Hello Clever is a buy-to-earn ecosystem that offers payments and financial management platforms for individuals and businesses. | Sydney | Stripe, Paypal |
 | [Manager](https://www.manager.io/) | Accounting software for small business  | Sydney | Xero |
+| [ReceiptClaimer](https://receiptclaimer.com.au) | AI-powered tax deduction tracking and audit reconciliation for Australian property investors. | Sydney | Xero, Spreadsheets |
 | [Rounded](https://rounded.com.au) | Accounting software for freelancers and sole traders.  | Melbourne | Xero, MYOB, Intuit Quickbooks |
 | [Saasu](https://www.saasu.com/) | Web based accounting software for small and medium businesses | Sydney | Xero, MYOB, Intuit Quickbooks |
 | [Thriday](https://www.thriday.com.au/) | Thriday is an all-in-one business financial management platform. | Melbourne | Xero, Intuit |
