@@ -148,6 +148,7 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 | [Linktree](https://linktr.ee/) | Linktree is a company that provides a platform that makes users' online content more discoverable & easy to manage. | Melbourne | link in bio |
 | [Safetyculture](https://safetyculture.com/) | Mobile-first operations platform that helps users identify issues and opportunities for businesses | Sydney | undefined |
 | [Whispir](https://www.whispir.com/en-au/) | Whispir is a cloud platform for automating intelligent, rich communications and enabling smarter, data-driven engagement. | Melbourne | Twilio, Sendinblue |
+| [ShopFront](https://shopfrontapp.co/) | All the tools you need to create, elevate and list your products across your favourite marketplaces. | Melbourne |  |
 ## Travel
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
