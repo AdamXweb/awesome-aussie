@@ -152,6 +152,7 @@ The data is available here on Github, but is also mirrored to [Codeberg](https:/
 | Provider | Description | HQ | Alternative to |
 | --- | --- | --- | --- |
 | [Siteminder](https://www.siteminder.com/) | Hotel commerce solution for independents and multi-property groups: channel manager, booking engine, website design, insights and hotel apps." | Sydney | Cloudbeds, Expedia |
+| [Spacecamps](https://spacecamps.com.au) | Campground and caravan park management with online booking, interactive site maps, guest management and Stripe payments. Flat monthly fee, no booking commissions; built for AU/NZ and poor networks. | Australia | RMS Cloud, NewBook |
 | [Tashi](https://tashi.travel/) | Online booking software for accommodation providers and and tour operators. Grow your revenue, boost your bookings and delight your guests. Easy set up,… | Melbourne | Cloudbeds, Expedia |
 ## Website builders
 | Provider | Description | HQ | Alternative to |
